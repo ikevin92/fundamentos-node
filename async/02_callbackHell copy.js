@@ -24,13 +24,11 @@ function conversacion(nombre, veces, callback) {
   if (veces >= 0) {
     hablar(function() {
       conversacion(nombre, --veces, callback);
-    }
-    );
+    });
 
   } else {
     callback(nombre, callback);
   }
-
 }
 
 
